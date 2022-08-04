@@ -17,8 +17,11 @@ For this analysis, we were tasked to do the following:
 ### Write an ETL function to read three data files
 The function takes the Wikipedia JSON, the Kaggle metadata and MovieLens csv files and creates three separate DataFrames.
 
+wiki movies dataframe
 ![wiki_movies_df](wiki_movies_df.png)
+kaggle metadata dataframe
 ![kaggle_metadata_df](kaggle_metadata_df.png)
+ratings dataframe
 ![ratings_df](ratings_df.png)
 
 ### Extract and Transform the Wikipedia data
@@ -30,7 +33,9 @@ Again, we consolidated the redundant data, removed the duplicates, formatted and
 The Kaggle and rating data were then merged with the Wikipedia movies DataFrame.
 
 ### Load the data to a PostgreSQL Movie Database
-![movies_sql_database.png]
+![movies_sql_database](movies_sql_database.png)
+![movies_query](movies_query.png)
+![ratings_query](ratings_query.png)
 
 ## Summary
 The ETL function created collects and cleans movie data from different sources (Wikipedia JSON and Kaggle and ratings csv files). It transforms and merges the data and loads it into two updatable PostgreSQL dataset tables ready to be used for analysis.
