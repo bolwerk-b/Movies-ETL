@@ -17,12 +17,9 @@ For this analysis, we were tasked to do the following:
 ### Write an ETL function to read three data files
 The function takes the Wikipedia JSON, the Kaggle metadata and MovieLens csv files and creates three separate DataFrames.
 
-wiki movies dataframe
-![wiki_movies_df.png]
-Kaggle metadata dataframe
-![kaggle_metadata_df.png]
-ratings dataframe
-![ratings_df.png]
+![wiki_movies_df](wiki_movies_df.png)
+![kaggle_metadata_df](kaggle_metadata_df.png)
+![ratings_df](ratings_df.png)
 
 ### Extract and Transform the Wikipedia data
 We filtered out the TV shows, consolidated the redundant data, removed the duplicates and formatted the Wikipedia data.
